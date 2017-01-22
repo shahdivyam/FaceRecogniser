@@ -28,12 +28,13 @@ print len(images)
 
 
 all_faces = np.asarray(images)
+
 labels = np.asarray(labels)
+
 #saving the numpy array of the images into numpy file and using this dataset for the image recognition model
 
 np.save('./data/dataset/face_data',all_faces)
 np.save('./data/dataset/face_label',labels)
-
 
 print all_faces.shape
 print labels.shape
